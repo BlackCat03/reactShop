@@ -1,7 +1,7 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/XsdmR2c/1.png",
+      img: "https://www.pngall.com/wp-content/uploads/2016/07/Dress-Download-PNG.png",
       title: "OFERTA VERANO",
       desc: "¡NO TE PIERDAS ESTAS SUPER OFERTAS! ¡OBTÉN UN 40% OFF PARA TU PRIMERA COMPRA!",
       bg: "f5fafd",
