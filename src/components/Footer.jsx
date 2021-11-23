@@ -116,8 +116,6 @@ const Footer = () => {
           <ListItem>Moda Mujeres</ListItem>
           <ListItem>Accesorios</ListItem>
           <ListItem>Mi Cuenta</ListItem>
-          <ListItem>Order Tracking</ListItem>
-          <ListItem>Lista de deseos</ListItem>
           <ListItem>Lista de deseos</ListItem>
           <ListItem>Términos y condiciones</ListItem>
         </List>
