@@ -3,6 +3,9 @@ import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import {  
+  Link
+} from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
@@ -81,13 +84,9 @@ const Navbar = () => {
           <Logo>BERNIL</Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTRAR</MenuItem>
-          <MenuItem>INICIAR SESIÓN</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined />
-            </Badge>
-          </MenuItem>
+          <MenuItem><Link to="/">HOME</Link></MenuItem>
+          <MenuItem><Link to="/productos">PRODUCTOS</Link></MenuItem>  
+          <MenuItem><Link to="/contacto">CONTACTO</Link></MenuItem>          
         </Right>
       </Wrapper>
     </Container>

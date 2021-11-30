@@ -1,12 +1,27 @@
-import Product from "./pages/Product";
 import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Cart from "./pages/Cart";
+import Announcement from "./components/Announcement";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 const App = () => {
-  return <Home/>;
+  return (
+    <Router>
+      <Announcement />
+      <Navbar />      
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/productos" element={<ProductList/>} />
+      </Routes>          
+      <Footer/>
+    </Router>
+  );
 };
 
 export default App;

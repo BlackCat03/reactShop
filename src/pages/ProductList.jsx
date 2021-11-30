@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Navbar from "../components/Navbar";
-import Announcement from "../components/Announcement";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
 import { mobile } from "../responsive";
@@ -37,41 +35,48 @@ const Option = styled.option``;
 
 const ProductList = () => {
   return (
-    <Container>
-      <Navbar />
-      <Announcement />
-      <Title>Dresses</Title>
+    <Container>      
+      <Title>Vestidos</Title>
       <FilterContainer>
+      <Filter>
+          <FilterText>Vista:</FilterText>
+          <Select>
+            <Option class="grilla">Grilla</Option>
+            <Option class="lista">Lista</Option>
+          </Select>
+        </Filter>
         <Filter>
-          <FilterText>Filter Products:</FilterText>
+          <FilterText>Filtrar:</FilterText>
           <Select>
             <Option disabled selected>
               Color
             </Option>
-            <Option>White</Option>
-            <Option>Black</Option>
-            <Option>Red</Option>
-            <Option>Blue</Option>
-            <Option>Yellow</Option>
-            <Option>Green</Option>
+            <Option class="blanco">Blanco</Option>
+            <Option class="negro">Negro</Option>
+            <Option class="rojo">Rojo</Option>
+            <Option class="azul">Azul</Option>
+            <Option class="amarillo">Amarillo</Option>
+            <Option class="verde">Verde</Option>
           </Select>
           <Select>
             <Option disabled selected>
-              Size
+              Tam
             </Option>
-            <Option>XS</Option>
-            <Option>S</Option>
-            <Option>M</Option>
-            <Option>L</Option>
-            <Option>XL</Option>
+            <Option class="xs">XS</Option>
+            <Option class="s">S</Option>
+            <Option class="m">M</Option>
+            <Option class="l">L</Option>
+            <Option class="xl">XL</Option>
           </Select>
         </Filter>
         <Filter>
-          <FilterText>Sort Products:</FilterText>
+          <FilterText>Sortear:</FilterText>
           <Select>
-            <Option selected>Newest</Option>
-            <Option>Price (asc)</Option>
-            <Option>Price (desc)</Option>
+            <Option selected class="nuevo">Nuevo</Option>
+            <Option class="precio1">Precio (asc)</Option>
+            <Option class="precio2">Precio (desc)</Option>
+            <Option class="nom1">Nombre (asc)</Option>
+            <Option class="nom2">Nombre (desc)</Option>
           </Select>
         </Filter>
       </FilterContainer>
