@@ -26,12 +26,6 @@ const Left = styled.div`
   align-items: center;
 `;
 
-const Language = styled.span`
-  font-size: 14px;
-  cursor: pointer;
-  ${mobile({ display: "none" })}
-`;
-
 const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
@@ -74,7 +68,6 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>ES</Language>
           <SearchContainer>
             <Input placeholder="Buscar" />
             <Search style={{ color: "gray", fontSize: 16 }} />
@@ -84,9 +77,9 @@ const Navbar = () => {
           <Logo>BERNIL</Logo>
         </Center>
         <Right>
-          <MenuItem><Link to="/">HOME</Link></MenuItem>
-          <MenuItem><Link to="/productos">PRODUCTOS</Link></MenuItem>  
-          <MenuItem><Link to="/contacto">CONTACTO</Link></MenuItem>          
+          <MenuItem><Link to="/" style={{ textDecoration: 'none', color: "black" }}>HOME</Link></MenuItem>
+          <MenuItem><Link to="/productos" style={{ textDecoration: 'none', color: "black" }}>PRODUCTOS</Link></MenuItem>  
+          <MenuItem><Link to="/contacto" style={{ textDecoration: 'none', color: "black"}}>CONTACTO</Link></MenuItem>          
         </Right>
       </Wrapper>
     </Container>

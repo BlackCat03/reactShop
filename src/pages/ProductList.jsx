@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Products from "../components/Products";
-import Footer from "../components/Footer";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -38,7 +37,7 @@ const ProductList = () => {
     <Container>      
       <Title>Vestidos</Title>
       <FilterContainer>
-      <Filter>
+        <Filter>
           <FilterText>Vista:</FilterText>
           <Select>
             <Option class="grilla">Grilla</Option>
@@ -60,7 +59,7 @@ const ProductList = () => {
           </Select>
           <Select>
             <Option disabled selected>
-              Tam
+              Tam.
             </Option>
             <Option class="xs">XS</Option>
             <Option class="s">S</Option>
@@ -81,7 +80,6 @@ const ProductList = () => {
         </Filter>
       </FilterContainer>
       <Products />
-      <Footer />
     </Container>
   );
 };

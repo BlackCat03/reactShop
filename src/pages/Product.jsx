@@ -1,8 +1,5 @@
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
-import Announcement from "../components/Announcement";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -139,7 +136,7 @@ const Product = () => {
               <FilterColor color="gray" />
             </Filter>
             <Filter>
-              <FilterTitle>Tam</FilterTitle>
+              <FilterTitle>Tam.</FilterTitle>
               <FilterSize>
                 <FilterSizeOption>XS</FilterSizeOption>
                 <FilterSizeOption>S</FilterSizeOption>
@@ -159,7 +156,6 @@ const Product = () => {
           </AddContainer>
         </InfoContainer>
       </Wrapper>
-      <Footer />
     </Container>
   );
 };
